@@ -1,5 +1,6 @@
 body {
     display: flex;
+    background-color: black;
 }
 .sidebar {
     min-width: 200px;
@@ -36,7 +37,8 @@ body {
     list-style: none;
     margin-left: 5px;
 }
-.collapsible{
-    margin-left: -100px;
+.search{
+    display: block;
 }
+
 
