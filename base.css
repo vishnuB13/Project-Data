@@ -50,6 +50,21 @@ body {
     align-items: center;
   }
 
+  .project-info-category {
+    margin: 20px;
+  }
+  .dynamic-list {
+    margin-top: 20px;
+  }
+  .dynamic-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .dynamic-item input {
+    margin-right: 10px;
+  }
+
 
  
 

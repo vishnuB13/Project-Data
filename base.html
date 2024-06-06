@@ -74,6 +74,8 @@
         </li>
         <li id="Access"><button type="button" class="btn btn-success">Manage Access</button>
         </li>
+        <li><div class="d-flex"><form class="form-inline float-right ml-18 mb-3"><button type="button" id="CloseAll" class="btn btn-danger">Close</button></form></div></li>
+
       </ul>
     </div>
 
@@ -116,31 +118,16 @@
 
     <!--Project Info Content-->
     <div id="project-info" class="content">
-      <h3>Search</h3>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Summary BOM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <div>
-
-            </div>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="project-info-category">
+      <h5 class="mb-5">Category</h5>
+      <div>
+        <input type="text" id="input-field" placeholder="Enter value">
+        <button type="button" onclick="addItem()">+</button>
+        <button type="button" onclick="removeLastItem()">-</button>
+      </div>
+      <ul id="dynamicList" class="dynamic-list"></ul>
+      </div>
+      
     </div>
 
     <!--Manage Access Content-->
