@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <style>
-
-  </style>
 </head>
 
 <body>
   <!-- Sidebar -->
 
-  <div class="collapse sidebar mt-2 " id="sidebar">
-    <h5 class="text-center mt-3">Menu</h5>
+  <div class="collapse bg-dark sidebar " id="sidebar">
+    <button class="btn btn-primary m-3 ml-5" type="button" data-toggle="collapse" data-target="#sidebar"
+    aria-expanded="false" aria-controls="sidebar">
+    Collapse
+  </button>
+    <h5 class="text-center all-text mt-3">Menu</h5>
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link" href="#">Dashboard</a>
+        <a class="nav-link all-text text-center" href="#">Dashboard</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Project</a>
+        <a class="nav-link all-text text-center" href="#">Project</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Notifications</a>
+        <a class="nav-link all-text text-center" href="#">Notifications</a>
       </li>
     </ul>
   </div>
@@ -33,28 +33,28 @@
 
   <div class="main-content">
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container-fluid d-flex  justify-content-between align-items-center">
+    <nav class="navbar ">
+      <div class="container-fluid bg-dark d-flex  justify-content-between align-items-center">
         <div class="navbar-brand d-flex">
           <button class="btn btn-primary m-3" type="button" data-toggle="collapse" data-target="#sidebar"
             aria-expanded="false" aria-controls="sidebar">
-            Collapse
+            Collapsed
           </button>
-          <h5 style="margin-top: 19px;">/ Super Admin</h5>
+          <h5 class="all-text" style="margin-top: 19px;">/ Super Admin</h5>
         </div>
 
 
         <div class="nav">
           <div class="nav-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
               class="bi bi-person-circle" viewBox="0 0 16 16">
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
               <path fill-rule="evenodd"
                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
             </svg>
           </div>
-          <h6 class="mb-0 mr-2 nav-link">Ananthu Santhosh</h6>
-          <div class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          <h6 class="all-text mb-0 mr-2 nav-link">Ananthu Santhosh</h6>
+          <div class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
               class="bi bi-gear" viewBox="0 0 16 16">
               <path
                 d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
@@ -74,7 +74,12 @@
         </li>
         <li id="Access"><button type="button" class="btn btn-success">Manage Access</button>
         </li>
-        <li><div class="d-flex"><form class="form-inline float-right ml-18 mb-3"><button type="button" id="CloseAll" class="btn btn-danger">Close</button></form></div></li>
+        <li>
+          <div class="d-flex">
+            <form class="form-inline float-right ml-18 mb-3"><button type="button" id="CloseAll"
+                class="btn btn-danger">Close</button></form>
+          </div>
+        </li>
 
       </ul>
     </div>
@@ -82,10 +87,19 @@
     <!-- Main Content -->
 
     <div id="project-content" class="content">
-      <form class="search-bar form-inline float-right mb-3">
+      <form class="search-bar form-inline float-right mb-3 pagination pagination-right">
         <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        <div class="pagination  mr-sm-2 mt-3">
+          <ul style="list-style: none;" class="d-flex justify-content-between align-items-center">
+            <li class="disabled"><a href="#"><button class="btn">prev</button></li>
+            <li class="active"><a href="#"><button class="btn">1</button></a></li>
+            <li class="active"><a href="#"><button class="btn">2</button></a></li>
+            <li class="active"><a href="#"><button class="btn">3</button></a></li>
+            <li class="active"><a href="#"><button class="btn">next</button></a></li>
+          </ul>
+        </div>
       </form>
-      <div class="table-container">
+      <div class="table-container all-text">
         <table class="table table-bordered">
           <!-- Table content -->
           <thead>
@@ -119,35 +133,35 @@
     <!--Project Info Content-->
     <div id="project-info" class="content">
       <div class="project-info-category">
-      <h5 class="mb-5">Category</h5>
-      <div>
-        <input type="text" id="input-field" placeholder="Enter value">
-        <button type="button" onclick="addItem()">+</button>
-        <button type="button" onclick="removeLastItem()">-</button>
+        <h5 class="mb-5 all-text">Category</h5>
+        <div>
+          <input type="text" id="input-field" placeholder="Enter value">
+          <button type="button" onclick="addItem()">+</button>
+          <button type="button" onclick="removeLastItem()">-</button>
+        </div>
+        <ul id="dynamicList" class="dynamic-list"></ul>
       </div>
-      <ul id="dynamicList" class="dynamic-list"></ul>
-      </div>
-      
+
     </div>
 
     <!--Manage Access Content-->
-    <div id="manage-access" class="content">
+    <div id="manage-access" class="content all-text">
       <div class="manage-main">
         <div class="gray mb-10">
           <h3>Manage User Access</h3>
         </div>
-        <div class="d-flex justify-content-between">
-          <div>
+        <div class="d-flex justify-content-between mb-10">
+          <div class="margin-top">
             <h6>WO NUMBER</h6>
-            <textarea name="" id=""></textarea>
+            <input type="text" id="input-field" placeholder="Enter value">
           </div>
           <div>
             <h6>Department</h6>
-            <textarea name="" id=""></textarea>
+            <input type="text" id="input-field" placeholder="Enter value">
           </div>
           <div>
             <h6>Employee</h6>
-            <textarea name="" id=""></textarea>
+            <input type="text" id="input-field" placeholder="Enter value">
           </div>
 
         </div>
@@ -187,9 +201,10 @@
             </tbody>
           </table>
         </div>
-
       </div>
     </div>
+
+  </div>
 
 
 

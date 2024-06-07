@@ -1,6 +1,7 @@
+
 body {
     display: flex;
-    background-color: black;
+    background-color: black ;
 }
 .sidebar {
     min-width: 200px;
@@ -11,7 +12,8 @@ body {
 }
 .main-content {
     margin-top: 0;
-    flex-grow: 1
+    flex-grow: 1;
+    background-color: black;
 }
 .navbar .container-fluid {
     background-color: #e9ecef;
@@ -42,7 +44,7 @@ body {
   }
 
   .gray{
-    background-color: #e9ecef;
+    
     margin-bottom: 10px;
   }
   .table-text{
@@ -63,6 +65,9 @@ body {
   }
   .dynamic-item input {
     margin-right: 10px;
+  }
+  .all-text{
+    color: white;
   }
 
 
