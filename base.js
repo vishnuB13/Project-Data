@@ -44,6 +44,7 @@ function addItem() {
 
     let removeButton = document.createElement('button');
     removeButton.textContent = '-';
+    removeButton.className="btn btn-primary"
     removeButton.type = 'button';
     removeButton.onclick = function() {
       removeItem(this);

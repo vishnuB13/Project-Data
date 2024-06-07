@@ -59,12 +59,15 @@ body {
     margin-top: 20px;
   }
   .dynamic-item {
+    color: white;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
   }
   .dynamic-item input {
     margin-right: 10px;
+   
   }
   .all-text{
     color: white;
